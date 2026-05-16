@@ -1,0 +1,20 @@
+<div class="login-container">
+
+  <div class="app-logo">
+    <span class="logo-icon">💪</span>
+    <h1 class="logo-text">GymApp</h1>
+  </div>
+
+  <button (click)="login()"
+          [disabled]="isLoading"
+          [attr.aria-busy]="isLoading"
+          class="btn-login">
+    <span *ngIf="!isLoading">Iniciar sesión</span>
+
+    <span *ngIf="isLoading" class="loading-content">
+      <span role="status" aria-label="Loading..." class="spinner"></span>
+      <span>Verifying...</span>
+    </span>
+  </button>
+
+</div>
