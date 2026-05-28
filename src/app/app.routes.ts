@@ -1,13 +1,13 @@
 import { Routes } from '@angular/router';
-<<<<<<< 2-tp4-users
 import { UsersComponent } from './user/user';
-
-export const routes: Routes = [
-    {path: 'users', component: UsersComponent}
-=======
 import { SettingsComponent } from './components/settings/settings'; 
+import { LoginComponent } from './login/login';
+
 
 export const routes: Routes = [
-    { path: 'configuracion', component: SettingsComponent }
->>>>>>> tp4
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
+  { path: 'users', component: UsersComponent },
+  { path: 'configuracion', component: SettingsComponent },
+  { path: '**', redirectTo: '/login' },
 ];
