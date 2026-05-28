@@ -1,0 +1,26 @@
+/* 1. ESTADO POR DEFECTO (Pantallas Grandes) */
+.bottom-bar {
+  display: none;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+/* 2. PUNTO DE INTERRUPCIÓN (Pantallas Chicas / Celulares) */
+@media (max-width: 768px) {
+  
+  .sidebar {
+    display: none;
+  }
+
+  .bottom-bar {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}

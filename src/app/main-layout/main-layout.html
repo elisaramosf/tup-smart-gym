@@ -1,0 +1,23 @@
+<div class="app-container">
+
+  <aside class="sidebar">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Smart Gym Logo">
+      <h2>Smart Gym</h2>
+    </div>
+    <nav class="nav-links">
+      <button routerLink="/items">🏋️‍♂️ Ítems</button>
+      <button routerLink="/configuracion">⚙️ Configuración</button>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <router-outlet></router-outlet>
+  </main>
+
+  <nav class="bottom-bar">
+    <button routerLink="/items">🏋️‍♂️</button>
+    <button routerLink="/configuracion">⚙️</button>
+  </nav>
+
+</div>
