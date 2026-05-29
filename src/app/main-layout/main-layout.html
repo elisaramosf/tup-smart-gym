@@ -1,0 +1,47 @@
+<div class="layout-wrapper">
+  
+  <aside class="sidebar">
+    <nav class="nav-menu">
+      <ul>
+        <li (click)="setActiveView('items')" 
+            [class.active]="activeView === 'items'">
+          Items
+        </li>
+        <li (click)="setActiveView('configuration')" 
+            [class.active]="activeView === 'configuration'">
+          Configuration
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <div class="content-container">
+      
+      <section class="view-section">
+        <h1>Items View</h1>
+        <p>This is where your items will be displayed.</p>
+        </section>
+
+      <section class="view-section">
+        <h1>Configuration View</h1>
+        <p>This is where your settings will go.</p>
+        </section>
+
+    </div>
+  </main>
+
+  <nav class="bottom-bar">
+    <ul class="nav-menu-bottom">
+      <li (click)="setActiveView('items')" 
+          [class.active]="activeView === 'items'">
+        Items
+      </li>
+      <li (click)="setActiveView('configuration')" 
+          [class.active]="activeView === 'configuration'">
+        Configuration
+      </li>
+    </ul>
+  </nav>
+
+</div>
